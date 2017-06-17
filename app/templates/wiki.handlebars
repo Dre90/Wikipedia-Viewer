@@ -1,0 +1,11 @@
+<ul>
+  {{#each pages}}
+  <a href="https://en.wikipedia.org/?curid={{ pageid }}" target="_blank">
+    <li>
+      <h1>{{ title }}</h1>
+      <p>{{ extract }}</p>
+    </li>
+  </a>
+
+  {{/each}}
+</ul>

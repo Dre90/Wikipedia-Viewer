@@ -1,0 +1,26 @@
+{
+  "name": "wikipedia_viewer",
+  "version": "1.0.0",
+  "description": "Wikipedia Viewer. A FreeCodeCamp assignment.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "latest",
+    "del": "latest",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-cache": "latest",
+    "gulp-cssnano": "latest",
+    "gulp-if": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-sass": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-uglify": "latest",
+    "gulp-useref": "latest",
+    "run-sequence": "latest"
+  }
+}

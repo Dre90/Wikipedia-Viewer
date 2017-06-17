@@ -1,0 +1,133 @@
+// styles.scss
+
+$yellow: #d6bd12;
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(70, 143, 203);
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+}
+
+.wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 25% 25% auto;
+}
+
+header {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  text-align: center;
+
+  h1 {
+    font-size: 4em;
+    color: $yellow;
+  }
+
+  a {
+    font-size: 1.8em;
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      color: $yellow;
+    }
+  }
+}
+
+.form-wrapper {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.content-wrapper {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+
+input {
+  margin: 0;
+  padding: 5px;
+  width: 100%;
+  height: 50px;
+  background-color: white;
+}
+
+.btn {
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: $yellow;
+  color: white;
+  border: none;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  width: 100%;
+  a {
+    text-decoration: none;
+    color: inherit;
+    h1 {
+      font-size: 1.4em;
+      font-weight: 700;
+    }
+    p {
+      font-weight: 400;
+    }
+  }
+  li {
+    list-style-type: none;
+    display: block;
+    margin-bottom: 20px;
+    padding: 15px 30px 5px 30px;
+    background-color: #E7E7E8;
+
+    &:hover {
+    border-left: 5px solid $yellow;
+    margin-left: -5px;
+    }
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .wrapper {
+    grid-template-columns: 15% 70% 15%;
+  }
+  header {
+    grid-column-start: 2;
+    grid-column-end: 2
+  }
+
+  .form-wrapper {
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+  .content-wrapper {
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+
+  form {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
